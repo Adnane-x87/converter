@@ -4,7 +4,7 @@ namespace App;
 
 class numberConverter implements converterInterface{
 
-use FormatterTrait;
+use formatterTrait;
 
 private $number;
 
