@@ -10,15 +10,12 @@
       "convert": "php bin/calc.php",
       "clear-output": "php -r \"file_put_contents('samples/output.json', '');\"",
       "build": [
-        "@composer dump-autoload -o",
-        "echo 'Build complete.'"
+          "@composer dump-autoload -o",
+          "echo 'Build complete.'"
       ],
-      "test": [
-        "php -r \"$input = trim(file_get_contents('samples/input.txt')); passthru('php bin/calc.php ' . $input);\""
-      ],
-      "save": [
-        "php -r \"$input = trim(file_get_contents('samples/input.txt')); passthru('php bin/calc.php ' . $input . ' --json > samples/output.json');\""
-      ]
+      "test": "php -r \"$input = trim(file_get_contents('samples/input.txt')); passthru('php bin/calc.php ' . $input);\"",
+      "save": "php bin/save.php > samples/output.json"
     },
     "require": {}
+  
   }
