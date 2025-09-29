@@ -1,24 +1,7 @@
 Number Converter CLI
 A PHP command-line tool for converting numbers between different bases (decimal, binary, hexadecimal) and performing bitwise operations.
 
-Features
-Convert numbers to decimal, binary, and hexadecimal formats
-Perform bitwise operations:
-AND (--and)
-OR (--or)
-XOR (--xor)
-NOT (--not)
-Shift Left (--shift-left)
-Shift Right (--shift-right)
-Clean, formatted output
-Support for both direct PHP execution and Composer scripts
-Requirements
-PHP 8.2 or higher
-Composer (for dependency management)
-Installation
-Clone the repository:
-git clone https://github.com/AZIZ-Soufiane/Converter.git
-cd Converter/Prototype
+
 Install dependencies:
 composer install
 Usage
